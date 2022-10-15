@@ -1,28 +1,155 @@
 <!--
  * @Author: Hao Yang
  * @Date: 2022-10-13 18:55:46
- * @LastEditTime: 2022-10-13 19:08:06
+ * @LastEditTime: 2022-10-15 12:11:17
  * @LastEditors: momo.local
  * @Description: In User Settings Edit
  * @FilePath: /Desktop/B_IMD_233/B_IMD233/Lab3/3c/pac12.html
 -->
 
+<link rel="pac-12" href="pac12.css">
+
+<style>
+  .leftside {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  .labelexpanded {
+    font-size: 12px;
+  }
+
+  .labelexpanded>input {
+    display: none;
+  }
+
+  .labelexpanded input:checked+.radio-btns {
+    background-color: #253cd2;
+    color: #FFF;
+  }
+
+  .radio-btns {
+    width: 57px;
+    height: 59px;
+    border-radius: 15px;
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 1px #ffff;
+    cursor: pointer;
+    background-color: #fff;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .radio-btns>img {
+    width: 57px;
+    height: 59px;
+  }
+</style>
+
 <head>
-    <title>Pac-12 North Division</title>
-  </head>
-  <body>
-    <img src="http://x.pac-12.com/profiles/pac12/themes/pac12_foundation/images/pac12/logo.png"  alt="Pac-12 
+  <title>Pac-12 North Division</title>
+</head>
+
+<body>
+  <img src="http://x.pac-12.com/profiles/pac12/themes/pac12_foundation/images/pac12/logo.png" alt="Pac-12 
   logo" title="Pac-12 Home">
-    <h3>Vote for your favorite Football Team </h3>
-    <form action="http://courses.washington.edu/bimd233/bimd.php"  method="post">
-      <input type="radio" name="team" value="Washington Huskies">Washington Huskies<br />
-      <input type="radio" name="team" value="Washington Cougars">Washington Cougars<br />
-      <input type="radio" name="team" value="Stanford Cardinals">Stanford Cardinals<br />
-      <input type="radio" name="team" value="California Bears">California Bears<br />
-      <input type="radio" name="team" value="Oregon State">Oregon State Beavers<br />
-      <input type="radio" name="team" value="Oregon">Oregon Ducks<br />
-      <br/>My State: <input type="text" name="state"><br/>
-      <input type="submit">
-    </form>
-  </body>
-  </html>
+  <h3>Vote for your favorite Football Team </h3>
+  <form action="http://courses.washington.edu/bimd233/bimd.php" method="post">
+
+    <div class="leftside">
+      <label class="labelexpanded">
+        <input type="radio" name="team" value="Washington Huskies">
+        <div class="radio-btns">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Washington_Huskies_logo.svg"
+            alt="Washington Huskies logs">
+          <p>Washington Huskies</p><br />
+        </div>
+        </input>
+      </label>
+
+
+      <div class="leftside">
+        <label class="labelexpanded">
+          <input type="radio" name="team" value="Washington Cougars">
+          <div class="radio-btns">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/0/07/Washington_State_Cougars_logo.svg"
+              alt="Washington Cougars logos">
+            <p>Washington Cougars</p><br />
+          </div>
+          </input>
+        </label>
+
+
+
+
+
+
+        <div class="leftside">
+          <label class="labelexpanded">
+        <input type="radio" name="team" value="Stanford Cardinals">
+        <div class="radio-btns">
+        <img
+        src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Stanford_Cardinal_logo.svg"
+        alt="Stanford Cardinals logos">
+        <p>Stanford Cardinals</p><br />
+      </div>
+    </input>
+  </label>
+
+
+
+
+        
+        <div class="leftside">
+          <label class="labelexpanded">
+        <input type="radio" name="team" value="California Bears">
+        <div class="radio-btns">
+        <img
+        src="https://upload.wikimedia.org/wikipedia/commons/8/8b/California_Golden_Bears_logo.svg"
+        alt="California Bears logos">
+        <p>California Bears</p><br />
+      </div>
+    </input>
+  </label>
+
+
+
+  <div class="leftside">
+    <label class="labelexpanded">
+        <input type="radio" name="team" value="Oregon State">
+        <div class="radio-btns">
+        <img
+        src="https://upload.wikimedia.org/wikipedia/en/1/1b/Oregon_State_Beavers_logo.svg"
+        alt="Oregon State Beavers logos">
+        <p>Oregon State Beavers</p><br />
+      </div>
+    </input>
+  </label>
+
+
+
+  <div class="leftside">
+  <label class="labelexpanded">
+        <input type="radio" name="team" value="Oregon">
+        <div class="radio-btns">
+        <img
+        src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Oregon_Ducks_logo.svg"
+        alt="Oregon State Beavers logos">
+        <p>Oregon Ducks</p><br />
+      </div>
+    </input>
+  </label>
+
+
+
+
+
+        <br />My State: <input type="text" name="state"><br />
+        <input type="submit">
+  </form>
+</body>
+
+</html>
