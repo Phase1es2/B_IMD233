@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open Raster Images.html",
+            "file": "/Users/haoyang/Desktop/B_IMD_233/B_IMD233/Lab4/4a/Raster Images.html"
+        }
+    ]
+}
