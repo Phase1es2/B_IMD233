@@ -1,0 +1,39 @@
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
+  padding: 50px;
+}
+
+td.stripes {
+  width: 595.5555555556px;
+  height: 30.7692307692px;
+}
+
+td.red_stripe {
+  background: red;
+}
+
+td.white_stripe {
+  background: white;
+}
+
+table#flag {
+  width: 888.8888888889px;
+  height: 400px;
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-collapse: collapse;
+}
+
+table#stars tr td {
+  color: white;
+  width: 26.6666666667px;
+  font-size: 1.1em;
+}
+
+table#stars {
+  background-color: blue;
+  text-align: center;
+  border-collapse: collapse;
+}

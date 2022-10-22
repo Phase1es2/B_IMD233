@@ -1,0 +1,83 @@
+thead,
+tfoot {
+  background-color: #333;
+  color: #fff;
+}
+
+th {
+  border: 1px solid #333;
+  width: 100px;
+  height: 30px;
+}
+
+th[scope=rgb1] {
+  background-color: rgba(51, 0, 111, 0.9);
+}
+
+th[scope=rgb2] {
+  background-color: rgba(51, 0, 111, 0.8);
+}
+
+th[scope=rgb3] {
+  background-color: rgba(51, 0, 111, 0.7);
+}
+
+th[scope=rgb4] {
+  background-color: rgba(51, 0, 111, 0.6);
+}
+
+th[scope=rgb5] {
+  background-color: rgba(51, 0, 111, 0.5);
+}
+
+th[scope=rgb6] {
+  background-color: rgba(51, 0, 111, 0.4);
+}
+
+th[scope=rgb7] {
+  background-color: rgba(51, 0, 111, 0.3);
+}
+
+th[scope=rgb8] {
+  background-color: rgba(51, 0, 111, 0.2);
+}
+
+th[scope=rgb9] {
+  background-color: rgba(51, 0, 111, 0.1);
+}
+
+th[scope=hsl1] {
+  background-color: rgba(247, 145, 208, 0.9);
+}
+
+th[scope=hsl2] {
+  background-color: rgba(247, 145, 208, 0.8);
+}
+
+th[scope=hsl3] {
+  background-color: rgba(247, 145, 208, 0.7);
+}
+
+th[scope=hsl4] {
+  background-color: rgba(247, 145, 208, 0.6);
+}
+
+th[scope=hsl5] {
+  background-color: rgba(247, 145, 208, 0.5);
+}
+
+th[scope=hsl6] {
+  background-color: rgba(247, 145, 208, 0.4);
+}
+
+th[scope=hsl7] {
+  background-color: rgba(247, 145, 208, 0.3);
+}
+
+th[scope=hsl8] {
+  background-color: rgba(247, 145, 208, 0.2);
+}
+
+th[scope=hsl9] {
+  background-color: rgba(247, 145, 208, 0.1);
+}

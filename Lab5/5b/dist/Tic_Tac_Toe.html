@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Tic-Tac-Toe - A Pen by Phase1es2</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <canvas id="myCanvas" width="600" height="600">Tic-Tac-Toe</canvas>
+</body>
+
+
+<script>
+  var canvas=document.getElementById("myCanvas");
+  var context=canvas.getContext("2d");
+  context.moveTo(0,200);
+  context.lineTo(600,200);        context.moveTo(0,400);
+  context.lineTo(600,400);
+   context.moveTo(200,0);
+  context.lineTo(200,600);
+     context.moveTo(400,0);
+  context.lineTo(400,600);
+  context.lineWidth=1;
+  context.stroke();
+</script>
+
+<script>
+var x = 100, y = 175;
+context.font="200px Arial";
+context.textAlign="center";
+context.margin="";
+context.fillText("X", x, y);
+</script>
+
+
+<script>
+var x = 500, y = 575;
+context.font="200px Arial";
+context.textAlign="center";
+context.margin="";
+context.fillText("X", x, y);
+</script>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(300, 300, 80, 0, 2 * Math.PI);
+ctx.lineWidth=15;
+ctx.stroke();
+  </script>
+<!-- partial -->
+  
+</body>
+</html>

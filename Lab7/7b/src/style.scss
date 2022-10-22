@@ -1,0 +1,61 @@
+$flag-height: 400px;
+$aspect-ratio: 20/9;
+$flag-width:$flag-height * $aspect-ratio ;
+$stripe-height:$flag-height / 13;
+$stripe-width: 0.67* $flag-width;
+$star-cell-width: (0.33* $flag-width)/11;
+
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
+  padding: 50px;
+}
+
+
+td.stripes {
+  width:$stripe-width;
+  height:$stripe-height;
+ // border: 1px solid black;
+}
+
+
+td.red_stripe {
+  background: red;
+}
+
+td.white_stripe {
+  background: white;
+}
+
+div#flag_frame {
+ // border: 3px solid red;
+ // height: $flag-height;
+}
+
+table#flag{
+ // border: 5px dashed rgb(51,0,111);
+ // background-color: blue;
+ // background-color:red;
+  width: $flag-height * $aspect-ratio;
+  height: $flag-height;
+ // box-shadow: 5px 10px #888888;
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-collapse:collapse;
+}
+
+table#stars tr td{
+  color:white;
+  //text-align: center;
+  //border: 1px solid white;
+  width: $star-cell-width;
+  font-size: 1.1em;
+}
+
+table#stars{
+ // color:white;
+  background-color: blue;
+  text-align: center;
+  border-collapse:collapse;
+}
