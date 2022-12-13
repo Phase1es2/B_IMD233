@@ -1,0 +1,29 @@
+body {
+  background-color: darkgray;
+}
+
+.container {
+  background-color: black;
+  border: 7px solid #4b2e83;
+  width: 600px;
+  border-radius: 7px;
+  margin-top:20px;
+}
+
+.card {
+  margin: 12px auto;
+}
+
+.card-title {
+  text-align: center;
+}
+
+#even {
+  background-color: white;
+  color: black;
+}
+
+#odd {
+  background-color: lightgray;
+  color: black;
+}

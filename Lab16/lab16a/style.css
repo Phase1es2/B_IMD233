@@ -1,0 +1,32 @@
+body {
+    margin-top: 25px;
+}
+
+.container {
+    background-color: darkgray;
+    border: 7px solid #4b2e83;
+    border-radius: 15px;
+    width: 500px;
+}
+
+.card {
+    margin: 20px auto;
+    width: 95%;
+}
+
+.winner {
+    color: green;
+}
+
+h1 span {
+    background-color: black;
+    /*  font-family: 'Press Start 2P', cursive; */
+    font-family: "Play", sans-serif;
+    font-size: 48px;
+    color: red;
+    padding: 5px;
+}
+
+button {
+    margin-top: 10px;
+}

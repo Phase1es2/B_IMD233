@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Flights.css">
+    <script src="Flights.js" type="text/javascript"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Flights</title>
+</head>
+<body>
+  <header>
+    <h1>Baggage Claim</h1>
+  </header>
+  <main>
+    <table class="table table-striped table-dark">
+      <thead>
+        <tr>
+          <th scope="col">Flight number</th>
+          <th scope="col">Aircraft Type</th>
+          <th scope="col">Departure Airport</th>
+          <th scope="col">Arrival Airport</th>
+          <th scope="col">Departed</th>
+          <th scope="col">Arrived</th>
+          <th scope="col">Gate</th>
+          <th scope="col">Flight duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="gold" id="Flight_num1"></th>
+          <td id="airline_1"></td>
+          <td id="origin_1"></td>
+          <td id="destination_1"></td>
+          <td id="depTime_1"></td>
+          <td id="arrivalTime_1"></td>
+          <td id="arrivalGate_1"></td>
+          <td id="duration_1"></td>
+        </tr>
+        <tr>
+          <th scope="row" id="Flight_num2"></th>
+          <td id="airline_2"></td>
+          <td id="origin_2"></td>
+          <td id="destination_2"></td>
+          <td id="depTime_2"></td>
+          <td id="arrivalTime_2"></td>
+          <td id="arrivalGate_2"></td>
+          <td id="duration_2"></td>
+        </tr>
+        <tr>
+          <th scope="row" id="Flight_num3"></th>
+          <td id="airline_3"></td>
+          <td id="origin_3"></td>
+          <td id="destination_3"></td>
+          <td id="depTime_3"></td>
+          <td id="arrivalTime_3"></td>
+          <td id="arrivalGate_3"></td>
+          <td id="duration_3"></td>
+        </tr>
+        <tr>
+          <th scope="row" id="Flight_num4"></th>
+          <td id="airline_4"></td>
+          <td id="origin_4"></td>
+          <td id="destination_4"></td>
+          <td id="depTime_4"></td>
+          <td id="arrivalTime_4"></td>
+          <td id="arrivalGate_4"></td>
+          <td id="duration_4"></td>
+        </tr>
+        <tr>
+          <th scope="row" id="Flight_num5"></th>
+          <td id="airline_5"></td>
+          <td id="origin_5"></td>
+          <td id="destination_5"></td>
+          <td id="depTime_5"></td>
+          <td id="arrivalTime_5"></td>
+          <td id="arrivalGate_5"></td>
+          <td id="duration_5"></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+      <script type="text/javascript">
+
+        var Flight1 = flights[0].number;
+        var Flight2 = flights[1].number;
+        var Flight3 = flights[2].number;
+        var Flight4 = flights[3].number;
+        var Flight5 = flights[4].number;
+
+        document.getElementById("Flight_num1").innerHTML = Flight1
+        document.getElementById("Flight_num2").innerHTML = Flight2
+        document.getElementById("Flight_num3").innerHTML = Flight3
+        document.getElementById("Flight_num4").innerHTML = Flight4
+        document.getElementById("Flight_num5").innerHTML = Flight5
+
+        var airline1 = flights[0].airline;
+        var airline2 = flights[1].airline;
+        var airline3 = flights[2].airline;
+        var airline4 = flights[3].airline;
+        var airline5 = flights[4].airline;
+
+        document.getElementById("airline_1").innerHTML = airline1
+        document.getElementById("airline_2").innerHTML = airline2
+        document.getElementById("airline_3").innerHTML = airline3
+        document.getElementById("airline_4").innerHTML = airline4
+        document.getElementById("airline_5").innerHTML = airline5
+
+        var origin1 = flights[0].origin;
+        var origin2 = flights[1].origin;
+        var origin3 = flights[2].origin;
+        var origin4 = flights[3].origin;
+        var origin5 = flights[4].origin;
+
+        document.getElementById("origin_1").innerHTML = origin1
+        document.getElementById("origin_2").innerHTML = origin2
+        document.getElementById("origin_3").innerHTML = origin3
+        document.getElementById("origin_4").innerHTML = origin4
+        document.getElementById("origin_5").innerHTML = origin5
+
+        var destination1 = flights[0].destination;
+        var destination2 = flights[1].destination;
+        var destination3 = flights[2].destination;
+        var destination4 = flights[3].destination;
+        var destination5 = flights[4].destination;
+
+        document.getElementById("destination_1").innerHTML = destination1
+        document.getElementById("destination_2").innerHTML = destination2
+        document.getElementById("destination_3").innerHTML = destination3
+        document.getElementById("destination_4").innerHTML = destination4
+        document.getElementById("destination_5").innerHTML = destination5
+
+        var depTime1 = flights[0].depTime.join(" ");
+        var depTime2 = flights[1].depTime.join(" ");
+        var depTime3 = flights[2].depTime.join(" ");
+        var depTime4 = flights[3].depTime.join(" ");
+        var depTime5 = flights[4].depTime.join(" ");
+
+        document.getElementById("depTime_1").innerHTML = depTime1
+        document.getElementById("depTime_2").innerHTML = depTime2
+        document.getElementById("depTime_3").innerHTML = depTime3
+        document.getElementById("depTime_4").innerHTML = depTime4
+        document.getElementById("depTime_5").innerHTML = depTime5
+
+        var arrivalTime1 = flights[0].arrivalTime.join(" ");
+        var arrivalTime2 = flights[1].arrivalTime.join(" ");
+        var arrivalTime3 = flights[2].arrivalTime.join(" ");
+        var arrivalTime4 = flights[3].arrivalTime.join(" ");
+        var arrivalTime5 = flights[4].arrivalTime.join(" ");
+        
+        document.getElementById("arrivalTime_1").innerHTML = arrivalTime1;
+        document.getElementById("arrivalTime_2").innerHTML = arrivalTime2;
+        document.getElementById("arrivalTime_3").innerHTML = arrivalTime3;
+        document.getElementById("arrivalTime_4").innerHTML = arrivalTime4;
+        document.getElementById("arrivalTime_5").innerHTML = arrivalTime5;
+
+        var arrivalGate1 = flights[0].arrivalGate;
+        var arrivalGate2 = flights[1].arrivalGate;
+        var arrivalGate3 = flights[2].arrivalGate;
+        var arrivalGate4 = flights[3].arrivalGate;
+        var arrivalGate5 = flights[4].arrivalGate;
+
+        document.getElementById("arrivalGate_1").innerHTML = arrivalGate1;
+        document.getElementById("arrivalGate_2").innerHTML = arrivalGate2;
+        document.getElementById("arrivalGate_3").innerHTML = arrivalGate3;
+        document.getElementById("arrivalGate_4").innerHTML = arrivalGate4;
+        document.getElementById("arrivalGate_5").innerHTML = arrivalGate5;
+
+        var duration1 = flights[0].duration() + "hr";
+        var duration2 = flights[1].duration() + "hr";
+        var duration3 = flights[2].duration() + "hr";
+        var duration4 = flights[3].duration() + "hr";
+        var duration5 = flights[4].duration() + "hr";
+
+        document.getElementById("duration_1").innerHTML = duration1;
+        document.getElementById("duration_2").innerHTML = duration2;
+        document.getElementById("duration_3").innerHTML = duration3;
+        document.getElementById("duration_4").innerHTML = duration4;
+        document.getElementById("duration_5").innerHTML = duration5;
+
+      </script>
+</body>
+</html>
