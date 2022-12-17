@@ -1,0 +1,12 @@
+.container{
+  background-color: rgb(192, 192, 192);
+  width: 400px;
+  height: 120px;
+}
+.container-back{
+  background-color: #4b2e83;
+  width: 500px;
+  height: 120px;
+  position: relative;
+  top: 20px;
+}
